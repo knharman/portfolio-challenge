@@ -5,6 +5,7 @@
     --baby-blue: #6cd4ffff;
     --congo-pink: #fe938cff;
     --misty-rose-dark: #bc6262;
+    --baby-blue-light: #ebf9ff;
 }
 
 * {
@@ -58,4 +59,59 @@ nav a:hover {
 #title {
     display: flex;
     align-items: center;
+}
+
+#main-content {
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: var(--baby-blue-light);
+    border-radius: 10px; 
+    margin-bottom: 15px;
+}
+
+.card img {
+    border-radius: 10px 10px 0 0;
+}
+
+.card h4, .card h5 {
+    margin: 5px;
+}
+
+.card:hover {
+    filter: drop-shadow(0px 0px 6px #000);
+}
+
+.small-card {
+    width: 200px;
+}
+
+#cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Media Queries */
+@media screen and (max-width: 980px) {
+    #main-content {
+        max-width: 970px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #main-content {
+        max-width: 758px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    #main-content {
+        max-width: 565px;
+        margin: 0 auto;
+    }
 }
