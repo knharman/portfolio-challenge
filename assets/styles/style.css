@@ -47,13 +47,21 @@ nav li {
 nav a {
     color: black;
     text-decoration: none;
+    padding: 10px;
 }
 
 nav a:hover {
     color: white;
     background-color: var(--independence);
-    padding: 10px;
     border-radius: 15px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section h1 {
+    margin: 10px 0;
 }
 
 #title {
@@ -76,7 +84,7 @@ nav a:hover {
     border-radius: 10px 10px 0 0;
 }
 
-.card h4, .card h5 {
+.card h2, .card h3, .card h4, .card h5, .card p {
     margin: 5px;
 }
 
@@ -84,14 +92,30 @@ nav a:hover {
     filter: drop-shadow(0px 0px 6px #000);
 }
 
+.big-card img {
+    max-width: 100%;
+    height: auto;
+}
+
 .small-card {
     width: 200px;
+}
+
+.small-card img {
+    width: 200px;
+    height: 200px;
 }
 
 #cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+#contact a {
+    text-decoration: none;
+    color: black;
+    padding: 10px; 
 }
 
 /* Media Queries */
