@@ -24,6 +24,7 @@ header {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    color: white;
 }
 
 header img {
@@ -45,7 +46,7 @@ nav li {
 }
 
 nav a {
-    color: black;
+    color: white;
     text-decoration: none;
     padding: 10px;
 }
@@ -113,9 +114,13 @@ section h1 {
 }
 
 #contact a {
-    text-decoration: none;
     color: black;
-    padding: 10px; 
+}
+
+#contact ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 /* Media Queries */
