@@ -25,6 +25,9 @@ header {
     justify-content: space-between;
     flex-wrap: wrap;
     color: white;
+    position: sticky; 
+    top: 0;
+    z-index: 9999;
 }
 
 header img {
@@ -63,6 +66,18 @@ section {
 
 section h1 {
     margin: 10px 0;
+}
+
+footer {
+    background-color: var(--baby-blue-light);
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer h2 {
+    display: inline;
 }
 
 #title {
